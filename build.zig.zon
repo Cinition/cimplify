@@ -2,8 +2,13 @@
     .name = .cimplify,
     .version = "0.0.0",
     .fingerprint = 0x445830e1fe733657,
-    .minimum_zig_version = "0.16.0-dev.1484+d0ba6642b",
-    .dependencies = .{},
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        .xlsxio = .{
+            .url = "git+https://github.com/Cinition/xlsxio-zig.git#d9f439e7fa7b38e4eca163f449a11799a21e0189",
+            .hash = "xlsxio-0.0.0-Am5uxl2dAQBjAgpkmZj6M-R3yZP-A9avxOiuW3UyyCb6",
+        },
+    },
     .paths = .{
         "build.zig",
         "build.zig.zon",
